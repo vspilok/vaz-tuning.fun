@@ -1,0 +1,366 @@
+body{
+    min-width: 900px;
+ background-image: white;
+ font-family: Verdana;
+}
+.dws-menu{
+ background-color: rgb(208, 207, 207);
+/* margin-top: 20px;*/
+ width: 80%;
+ margin-left: 10%;
+}
+ul.dws-ul{
+ display: flex;
+ padding: 0;
+ justify-content: center;
+}
+li.dws-li{
+ list-style: none;
+ padding: 10px;
+}
+li.dws-li a{
+ text-decoration: none;
+ font-size: 18px;
+ color: #000;
+ position: relative;
+ padding: 5px;
+}
+li.dws-li a i{
+ margin-right: 10px;
+}
+li.dws-li a::before{
+ content: '';
+ width: 0;
+ height: 3px;
+ background-color: #33bdf1;
+ position: absolute;
+ top: 90%;
+ left: 0;
+ transition: .5s;
+ mix-blend-mode: multiply;
+}
+li.dws-li a::after{
+ content: '';
+ width: 0;
+ height: 3px;
+ background-color: #ff2117;
+ position: absolute;
+ top: 90%;
+ right: 0;
+ transition: .5s;
+ mix-blend-mode: multiply;
+}
+li.dws-li:hover{
+ background-color: #e5eae8;
+}
+li.dws-li:hover a::before{
+ width: 50%;
+ transform: translateX(100%);
+}
+li.dws-li:hover a::after{
+ width: 50%;
+ transform: translateX(-100%);
+}
+li.dws-li a:hover{
+ color: #e62117;
+}
+
+
+
+ .btn-sign:hover {
+   color: red;
+ }
+ .btn-register:hover {
+    color: red;
+  }
+div.header-before
+{
+    background-color: rgb(184, 183, 183);
+    margin-top: 5px;
+    width: 80%;
+    height: 30px;
+    margin-left: 10%;
+    display: flex;
+   align-items: center;
+    justify-content: space-between;
+   
+   
+}
+.left-bfr
+{
+    justify-content: flex-end;
+}
+/*div.header-before-left
+{
+    display: flex;
+    align-self: center;
+   
+}
+div.header-before-right
+{
+    font-size: 18px;
+    display: flex;
+    align-self: center;
+}*/
+div.header-after
+{
+    background-color: rgb(255, 255, 255);
+    
+    height: 80px;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+   align-items: center;
+    justify-content: space-between;
+}
+
+.tel{
+    font-size: 36px;
+    font-weight: bold;
+
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    margin: 0 20px;
+    font-size: 24px;
+    font-family: 'Fredoka One', cursive;
+    transition: .3s ease-in-out;
+  }
+.s2 {
+    color: #969696;
+    text-shadow: 1px 1px black;
+    letter-spacing: 1px;
+    border-bottom: 2px solid transparent;
+  }
+  
+.bottom{
+    height:200px ;
+    width: 80%;
+    margin-left: 10%;
+    background-color: rgb(158, 155, 155);
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+
+.content{
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: 800px;
+    margin-left: 10%;
+}
+.footer__callback-button {
+    display: block;
+    width: 80%;
+    margin-bottom: 15px;
+    width: 160px;
+    margin-left: 10%;
+}
+.button--bordered, .button--bordered:hover {
+    background-color: transparent;
+}
+.button--bordered {
+    height: 34px;
+    border: 2px solid #ffd531;
+    padding: 7px 15px;
+    font-family: Verdana,sans-serif;
+    font-size: 12px;
+}
+.footer__callback {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.footer__callback-text{
+   
+    font-family: Verdana,sans-serif;
+    font-size: 12px;
+}
+
+
+
+.holder1{
+    position:relative;   
+    width:400px ;
+    height: 280px;
+    background-image: url('https://cloud.leparking.fr/2020/01/14/01/10/lada-2106-was-2106-lada-orange_7411025241.jpg') ;
+     margin:100px auto;
+}
+.holder2{
+    position:relative;   
+    width:400px ;
+    height: 280px;
+    background-image: url('https://lh3.googleusercontent.com/proxy/tdOS0vYTs82E8IGEBSveVK9fbBYfryDp2EGVyQJPAKFBTpVeTHv5LXp0Pr6z-sMIVmCXhRKYum_WwkRYXnqpqgn3Ab4E75iTsFPVJRU') ;
+     margin:100px auto;
+}
+
+
+.holder{
+    display: flex;
+    flex-direction: row;
+justify-content:space-between ;
+}
+
+.block{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    background:rgba(255,255,255, 0.7);
+    padding:5px;
+    display:none;
+}
+
+.holder1:hover .block{
+    display:block;
+}
+.holder2:hover .block{
+    display:block;
+}
+
+
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 50%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  .registerbtn {
+    
+    background-color: #444444;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity:1;
+  }
+  .telButton {
+    
+    background-color: #444444;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+  }
+  
+  .telButton:hover {
+    opacity:1;
+  }
+
+  .clbck{
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: 500px;
+    margin-left: 10%;
+}
+.bottom1{
+    height:150px ;
+    width: 80%;
+    margin-left: 10%;
+    background-color: rgb(158, 155, 155);
+}
+.reg{
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: 600px;
+    margin-left: 10%;
+}
+.loginbtn {
+    
+    background-color: #444444;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    opacity: 0.9;
+  }
+  
+  .loginbtn:hover {
+    opacity:1;
+  }
+  .contacts{
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    margin-left: 20%;
+    height: 900px;
+    
+  }
+  .map{
+      width: 80%;
+      margin-left: 10%;
+      height: 400px;
+      background: yellow;
+  }
+  .about{
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+   height: 800px;
+    margin-left: 20%;
+    height: 900px;
+  }
+  .wp{
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+   height: 800px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .wp1{
+   
+    margin-right: 10%;
+    display: flex;
+justify-content:space-between ;
+
+  }
+  .wp2{
+    
+    margin-right: 10%;
+    display: flex;
+justify-content:space-between ;
+
+  }
+  .wp3{
+    
+    margin-right: 10%;
+    display: flex;
+justify-content:space-between ;
+
+  }
+
+  .scale {
+    transition: 1s; /* Время эффекта */
+   }
+   .scale:hover {
+    transform: scale(1.8); /* Увеличиваем масштаб */
+   }
